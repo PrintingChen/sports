@@ -1,0 +1,57 @@
+<view class="page">
+
+    <view class="item-list">
+        <view class="page__bd">
+            <view class="weui-panel">
+                <view class="weui-panel__bd">
+                    <view class="weui-cells weui-cells_after-title">
+                        <view class="weui-cell weui-cell_input">
+                            <view class="weui-cell__hd">
+                                <view class="weui-label">收货人姓名</view>
+                            </view>
+                            <view class="weui-cell__bd">
+                                <input class="weui-input" placeholder="建议使用真实姓名" />
+                            </view>
+                        </view>
+                        <view class="weui-cell weui-cell_input">
+                            <view class="weui-cell__hd">
+                                <view class="weui-label">收货人电话</view>
+                            </view>
+                            <view class="weui-cell__bd">
+                                <input class="weui-input" placeholder="请输入您的手机号" />
+                            </view>
+                        </view>
+                    </view>
+
+                    <view class="weui-media-box weui-media-box_small-appmsg">
+                        <view class="weui-cells weui-cells_in-small-appmsg">
+                            <navigator class="weui-cell weui-cell_access" hover-class="none">
+                                <view class="weui-cell__bd weui-cell_primary">
+                                    <view>
+                                        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                                            <view class="picker" style="color:#333;">
+                                                收货人地址<text style="float: right;display: inline-block;max-width: 436rpx;" class="hidden-t">{{region[0]}}{{region[1]}}{{region[2]}}</text>
+                                            </view>
+                                        </picker>
+                                    </view>
+                                </view>
+                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                            </navigator>
+                        </view>
+                    </view>
+
+                    <view class="weui-cells weui-cells_after-title" style="height: 349rpx;">
+                        <view class="weui-cell weui-cell_input">
+                            <view class="weui-cell__bd">
+                                <input class="weui-input" placeholder="请输入详细地址" />
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+
+            </view>
+        </view>
+    </view>
+    <view class='submit' bindtap="submit">保存</view>
+</view>

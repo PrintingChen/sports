@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="list-match" wx:if="{{!loadError}}">
+    <view class="item-title">{{data.competition.name}}</view>
+    <view class="status wait" wx:if="{{data.match.status==1}}">未开始</view>
+    <view class="status active" wx:if="{{data.match.status==2}}">未结束</view>
+    <view class="status disabeld" wx:if="{{data.match.status==3}}">已结束</view>
+    <view class="match-info">
+      <view class="left-item">
+        <image src="{{data.homeTeam.teamLogoUrl}}" />
+        <view class="text">{{data.homeTeam.teamName}}</view>
+      </view>
+      <view class="text-item">
+        <view class="left-score">{{data.match.homeTeamScore}}</view> VS
+        <view class="right-score">{{data.match.roadTeamScore}}</view>
+      </view>
+      <view class="right-item">
+        <image src="{{data.roadTeam.teamLogoUrl}}" />
+        <view class="text">{{data.roadTeam.teamName}}</view>
+      </view>
+    </view>
+    <view class="text-bottom">{{data.match.startTime}} {{data.match.address}}</view>
+  </view>
+  <view class="list" wx:if="{{!isLoading&&!loadError}}">
+    <view class="container">
+      <view class="item" wx:for="{{data.matchReports}}">
+        <image wx:if="{{item.imageUrl!=''&&item.imageUrl}}" src="{{item.imageUrl}}" />
+        <view class="content">{{item.content}}</view>
+        <view class="time" wx:if="{{item.content!=''}}">{{item.createTime}}</view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{loadError}}" class="empty">赛事信息不存在</view>
+  <view class="weui-loadmore" wx:if="{{isLoading}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</view>

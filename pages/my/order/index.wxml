@@ -1,0 +1,97 @@
+<view class="page">
+    <view class='order-list'>
+        <view class='order-list-item'>
+            <view bindtap="goDetail">
+                <view class='order-sn'>
+                    <image src='/images/icon-order-sn.png'></image>
+                    <view class='sn'>订单号：201806081234</view>
+                    <view class='order-status dispatching'>待支付</view>
+                </view>
+                <view class="order-content">
+                    <view class='goods-pic'>
+                        <image src='https://img.alicdn.com/bao/uploaded/i3/2924356953/TB1OIjObmYTBKNjSZKbXXXJ8pXa_!!0-item_pic.jpg_220x220.jpg'></image>
+                    </view>
+                    <view class='order-content-right'>
+                        <view class='goods-name'>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                        <view class='bottom'>
+                            <view class='goods-opt'>
+                                <text class='color'>颜色：白色</text>
+                                <text class='size'>规格：5号</text>
+                            </view>
+                            <view class='goods-price'>
+                                <text class='price-1'>¥ 1890.00</text>
+                                <text class='price-2'>¥ 2890.00</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="count">
+                    共计1件，合计：
+                    <text class="total">¥ 1890.00</text>
+                </view>
+            </view>
+            <view class="controls">
+                <view class="btn pay" bindtap="pay">重新支付</view>
+                <view class="btn cancel" bindtap="cancelPay">取消订单</view>
+            </view>
+        </view>
+        <view class='order-list-item' bindtap="goDetail">
+            <view class='order-sn'>
+                <image src='/images/icon-order-sn.png'></image>
+                <view class='sn'>订单号：201806081234</view>
+                <view class='order-status to-paid'>已关闭</view>
+            </view>
+            <view class="order-content">
+                <view class='goods-pic'>
+                    <image src='https://img.alicdn.com/bao/uploaded/i3/2924356953/TB1OIjObmYTBKNjSZKbXXXJ8pXa_!!0-item_pic.jpg_220x220.jpg'></image>
+                </view>
+                <view class='order-content-right'>
+                    <view class='goods-name'>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                    <view class='bottom'>
+                        <view class='goods-opt'>
+                            <text class='color'>颜色：白色</text>
+                            <text class='size'>规格：5号</text>
+                        </view>
+                        <view class='goods-price'>
+                            <text class='price-1'>¥ 1890.00</text>
+                            <text class='price-2'>¥ 2890.00</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="count">
+                共计1件，合计：
+                <text class="total">¥ 1890.00</text>
+            </view>
+        </view>
+        <view class='order-list-item' bindtap="goDetail">
+            <view class='order-sn'>
+                <image src='/images/icon-order-sn.png'></image>
+                <view class='sn'>订单号：201806081234</view>
+                <view class='order-status to-paid'>配送中</view>
+            </view>
+            <view class="order-content">
+                <view class='goods-pic'>
+                    <image src='https://img.alicdn.com/bao/uploaded/i3/2924356953/TB1OIjObmYTBKNjSZKbXXXJ8pXa_!!0-item_pic.jpg_220x220.jpg'></image>
+                </view>
+                <view class='order-content-right'>
+                    <view class='goods-name'>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                    <view class='bottom'>
+                        <view class='goods-opt'>
+                            <text class='color'>颜色：白色</text>
+                            <text class='size'>规格：5号</text>
+                        </view>
+                        <view class='goods-price'>
+                            <text class='price-1'>¥ 1890.00</text>
+                            <text class='price-2'>¥ 2890.00</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="count">
+                共计1件，合计：
+                <text class="total">¥ 1890.00</text>
+            </view>
+        </view>
+    </view>
+</view>

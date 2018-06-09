@@ -1,0 +1,75 @@
+.page .top-bg {
+    position: relative;
+    height: 460rpx;
+    background: url('https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2890329335,512719952&fm=27&gp=0.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.avatar-box{
+    position: absolute;
+    left: 50%;
+    bottom: -80rpx;
+    transform: translateX(-50%);
+    width: 160rpx;
+    height: 160rpx;
+    border: 2px solid #4ea4a7;
+    border-radius: 100%;
+}
+
+.page .top-bg .avatar {
+    height: 160rpx;
+    width: 160rpx;
+    border-radius: 100%;
+}
+
+.page .form{
+    box-sizing: border-box;
+    padding: 180rpx 40rpx 0 40rpx;
+}
+
+.weui-cells{
+    background-color: transparent;
+    padding: 0;
+}
+
+.weui-cells .weui-cell.weui-cell_input{
+    height:124rpx;
+    /* padding: 0; */
+}
+
+.weui-cells .weui-cell.weui-cell_input::before{
+    left: 0;
+}
+
+.weui-cells.weui-cells_after-title .weui-cell.weui-cell_input .weui-cell__bd{
+    background-color: transparent;
+    height: 100%;
+}
+
+.weui-cells.weui-cells_after-title .weui-cell.weui-cell_input .weui-cell__bd::before{
+    border-bottom: 1px solid red;
+}
+
+.weui-cells.weui-cells_after-title .weui-cell.weui-cell_input .weui-cell__bd .weui-input{
+    color: #aaa;
+    font-size: 30rpx;
+    height: 100%;
+}
+
+.weui-vcode-btn{
+    color: #333;
+    font-size: 30rpx;
+    max-width:170rpx;
+}
+
+.page .submit{
+    width: 700rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background-color: #4ea4a7;
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    border-radius: 8rpx;
+    margin: 80rpx auto 0;
+}

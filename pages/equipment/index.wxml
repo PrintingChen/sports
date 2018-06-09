@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="list-pic" wx:for="{{list}}"  bindtap="goDetail" data-id="{{item.itemSn}}" wx:key="index">
+    <image src="{{item.coverImgUrl}}" />
+    <view class="item-title">{{item.title}}</view>
+    <view class="price">￥{{item.discountPrice}}<view>￥{{item.originalPrice}}</view></view>
+  </view>
+  <view class="clear"></view>
+  <view class="weui-loadmore" wx:if="{{isLoading}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+  <view class="weui-loadmore weui-loadmore_line" wx:if="{{noMoreData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line gray">没有更多</view>
+  </view>
+  <view class="weui-loadmore weui-loadmore_line" wx:if="{{noData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line gray">暂无数据</view>
+  </view>
+</view>

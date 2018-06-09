@@ -1,0 +1,64 @@
+<view class="page">
+    <view class="top-bg">
+        <text class='status-text'>配送中</text>
+        <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3343499300,723365351&fm=27&gp=0.jpg'></image>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_small-appmsg">
+                <view class="weui-cells weui-cells_in-small-appmsg">
+                    <navigator url="" class="weui-cell weui-cell_access" hover-class="none">
+                        <view class="weui-cell__hd">
+                            <image src="/images/icon-addr.png" style="width: 20px;height: 20px;margin-right: 5px；position:relative;top:8rpx;" />
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary hidden-t">
+                            <view class="hidden-t">
+                                <text class="nickname">李小真</text>
+                                <text>13044533536</text>
+                            </view>
+                            <view class="hidden-t">广东省, 广州市, 越秀区,</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='order-list'>
+        <view class='order-list-item'>
+            <view class="order-content">
+                <view class='goods-pic'>
+                    <image src='https://img.alicdn.com/bao/uploaded/i3/2924356953/TB1OIjObmYTBKNjSZKbXXXJ8pXa_!!0-item_pic.jpg_220x220.jpg'></image>
+                </view>
+                <view class='order-content-right'>
+                    <view class='goods-name'>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                    <view class='bottom'>
+                        <view class='goods-opt'>
+                            <text class='color'>颜色：白色</text>
+                            <text class='size'>规格：5号</text>
+                        </view>
+                        <view class='goods-price'>
+                            <text class='price-1'>¥ 1890.00</text>
+                            <text class='price-2'>¥ 2890.00</text>
+                            <text class='goods-amount'>x 1</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="count">
+                共计1件，合计：
+                <text class="total">¥ 1890.00</text>
+            </view>
+        </view>
+    </view>
+    <view class='order-msg'>
+        <view class='order-msg-left'>
+            <view>订单号：2132343534</view>
+            <view>创建时间：2132343534</view>
+            <view>支付时间：2132343534</view>
+        </view>
+        <view class='order-msg-right'>
+            <view class='contact'>联系客服</view>
+        </view>
+    </view>
+</view>

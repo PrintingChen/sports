@@ -1,0 +1,42 @@
+<view class="page">
+  <view class="img-box">
+    <image src="/images/train/topbg.jpg" class="image" />
+  </view>
+  <view class="title">仕伯特李铁国际幼儿足球培训</view>
+  <view class="desc">“足球从娃娃抓起”不再是一句空号，仕伯特足球培训创始人李铁将迈出这一步 。广州仕伯特体育发展有限公司自成立初一直致力于幼儿足球培训，是一家“国际化专业足球”的幼儿体能锻炼及培训机构。</view>
+  <view class="center" style="margin-top:35rpx;margin-bottom:35rpx;">
+    <button class="weui-btn mini-btn" type="default" size="mini" bindtap="goDetail">查看详细</button>
+  </view>
+  <view class="title-tips" style="overflow:hidden;">
+    园所列表
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="right-btn">{{multiArray[0][multiIndexActive[0]]}}-{{multiArray[1][multiIndexActive[1]]}}
+        <image src="/images/icon-down.png" style="width:24rpx;height:15rpx;margin-left:10rpx;"></image>
+      </view>
+    </picker>
+  </view>
+  <!-- 园所列表 -->
+  <view class="weui-panel weui-panel_access list-custom">
+    <view class="weui-panel__bd">
+      <navigator url="/pages/school/index?id={{item.id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" wx:for="{{list}}" wx:key="item.id">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb round" src="{{item.logoUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{item.name}}</view>
+          <view class="weui-media-box__desc">{{item.summary}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="weui-loadmore" wx:if="{{isLoading}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+  <view class="weui-loadmore weui-loadmore_line" wx:if="{{noMoreData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多</view>
+  </view>
+  <view class="weui-loadmore weui-loadmore_line" wx:if="{{noData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+  </view>
+</view>

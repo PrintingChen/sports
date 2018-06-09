@@ -1,0 +1,56 @@
+page {
+  background: #fff;
+}
+
+.top-img {
+  position: relative;
+  height: 337rpx;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 24rpx;
+  color: #fff;
+  padding: 0 10rpx;
+}
+
+.line {
+  height: 10rpx;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+  background: #eee;
+}
+
+.top-img image {
+  width: 100%;
+  height: 337rpx;
+}
+
+.join-num {
+  font-size: 26rpx;
+  color: #999;
+  padding-left: 10rpx;
+}
+
+.time {
+  font-size: 28rpx;
+  color: #333;
+  padding-left: 10rpx;
+  line-height: 42rpx;
+  padding-bottom: 10rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  padding: 15rpx 10rpx 10rpx 10rpx;
+  line-height: 36rpx;
+  font-weight: bold;
+}

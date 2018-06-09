@@ -1,0 +1,23 @@
+<view class="page">
+    <view class='line'></view>
+    <view class='pay-msg-box'>
+        <view class='success-msg'>
+            <!-- <icon type="warn" color="#f61938" size="18"/>  -->
+            <!-- <text class='text fail'>支付失败</text> -->
+            <icon type="success" color="#4ea4a7" size="18" />
+            <text class='text'>支付成功</text>
+        </view>
+        <view class='price'>¥ 999.00</view>
+        <view class='tips'>您可以进入个我的-我的订单里查看并重新发起支付</view>
+        <view class='my-order'>
+            <navigator url='/pages/my/order/index' hover-class='none'>我的订单</navigator>
+        </view>
+    </view>
+    <view class='bottom'>
+        <view class='order-msg'>
+            <view>订单号：3443534554</view>
+            <view>创建时间：sdfd435345</view>
+            <view>支付时间：34435344444</view>
+        </view>
+    </view>
+</view>

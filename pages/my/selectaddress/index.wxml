@@ -1,0 +1,41 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title" hover-class="none">
+            <radio-group bindchange="radioChange" hover-class="none">
+                <block wx:for="{{radioItems}}" wx:key="value">
+                    <view class="radio-item">
+                        <label class="weui-cell weui-check__label clearfix" hover-class="none">
+                            <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" hover-class="none" />
+                            <view class="weui-cell__ft weui-cell__ft_in-radio" hover-class="none">
+                                <icon type="success" size="23" wx:if="{{item.checked}}" color="#4ea4a7"></icon>
+                                <icon type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                            </view>
+                            <view class="weui-cell__bd" hover-class="none">
+                                <view class="name">{{item.name}}</view>
+                                <view>使得开发商大幅亏损的方式</view>
+                            </view>
+                        </label>
+                        <view class="radio-bottom">
+                            <view class="c-btn del">
+                                <image src="/images/icon-del.png"></image>
+                                <text>删除</text>
+                            </view>
+                            <view class="c-btn edit" bindtap="goEditAddr">
+                                <image src="/images/icon-edit.png"></image>
+                                <text>编辑</text>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </radio-group>
+        </view>
+    </view>
+    <view class="add-address">
+        <navigator url="/pages/my/editaddress/index" hover-class="none">
+            <view class="middle">
+                <image src="/images/icon-add.png"></image>
+                <text>添加收货地址</text>
+            </view>
+        </navigator>
+    </view>
+</view>

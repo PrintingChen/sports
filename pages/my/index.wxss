@@ -1,0 +1,97 @@
+.page{
+    height: 100%;
+    background-color: #efefef;
+}
+.page .top-bg {
+    height: 460rpx;
+    color: #fff;
+    text-align: center;
+    background: url('https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2890329335,512719952&fm=27&gp=0.jpg') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 20rpx;
+}
+
+.page .top-bg .avatar-btn {
+    padding: 4rpx;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.page .top-bg image {
+    height: 150rpx;
+    width: 150rpx;
+    border-radius: 100%;
+}
+
+.page .top-bg .avatar {
+    height: 160rpx;
+    width: 160rpx;
+    border: 2px solid #4ea4a7;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.page .top-bg .login-text {
+    color: #fff;
+}
+
+.page .top-bg .avatar image {
+    height: 160rpx;
+    width: 160rpx;
+    border-radius: 100%;
+}
+
+.page .top-bg .avatar-btn::after {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.page .top-bg .nickname {
+    font-size: 36rpx;
+    margin-top: 12rpx;
+    color: #fff;
+}
+
+.page .top-bg .avatar-box,
+.page .top-bg .u-info-box {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page .top-bg .phone {
+    font-size: 30rpx;
+    color: #fff;
+}
+
+.page__bd{
+    padding: 0;
+}
+
+.weui-cell {
+    padding:0 40rpx;
+    height: 124rpx;
+    box-sizing: border-box;
+}
+.weui-cell_primary {
+    font-size: 30rpx;
+    color: #575755;
+}
+
+.page__bd .weui-panel {
+    margin-top: 0;
+}
+
+.page__bd .weui-panel .weui-panel__ft {
+    height: 100%;
+}
+
+.page__bd .weui-panel .weui-panel__ft .weui-cell.weui-cell_access.weui-cell_link {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 40rpx;
+    box-sizing: border-box;
+    color: #575755;
+    font-size: 30rpx;
+}

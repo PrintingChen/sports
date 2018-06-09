@@ -1,0 +1,16 @@
+<import src="/common/libs/wxParse/wxParse.wxml"/>
+<view class="page">
+  <view class="top-img">
+      <image src="{{detail.coverImgUrl}}"/>
+      <view class="bottom-text" wx-if="{{detail.status==0}}">已结束</view>
+  </view>
+  <view class="title">{{detail.title}}</view>
+  <view class="join-num">已报名参加人数：{{detail.applys}}人</view>
+  <view class="time">报名时间：{{detail.beginTime}} - {{detail.endTime}}</view>
+  <view class="line"></view>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  <view class="weui-loadmore" wx:if="{{isLoading}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</view>

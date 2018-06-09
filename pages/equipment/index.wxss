@@ -1,0 +1,49 @@
+page {
+  background: #f4f4f4;
+}
+
+.list-pic {
+  position: relative;
+  width: 345rpx;
+  height: 500rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  overflow: hidden;
+  text-align: left;
+  background: #fff;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.list-pic .item-title {
+  font-size: 22rpx;
+  color: #6d6d6d;
+  width: 305rpx;
+  height: 60rpx;
+  padding: 0 20rpx;
+  line-height:30rpx;
+  padding-top: 10rpx;
+  top: 10rpx;
+  overflow: hidden;
+  text-align: center;
+}
+
+.list-pic image {
+  width: 343rpx;
+  height: 350rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #DDD;
+}
+.price {
+  padding-top: 15rpx;
+  font-size: 22rpx;
+  color: #e43636;
+  text-align: center;
+}
+.price view {
+  display:  inline-block;
+  color: #b1b1b1;
+  margin-left: 20rpx;
+  text-decoration: line-through;
+}

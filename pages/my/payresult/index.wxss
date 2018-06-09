@@ -1,0 +1,96 @@
+page{
+    background-color: #efefef;
+}
+.page{
+    background-color: #efefef;
+    /* padding: 0 40rpx 0 40rpx; */
+    box-sizing: border-box;
+}
+
+.page .line{
+    position: absolute;
+    top: 79rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 670rpx;
+    margin: 0 auto;
+    height: 16rpx;
+    background-color: #a9a29c;
+    border-radius: 8rpx;
+}
+
+.page .pay-msg-box{
+    margin: 0 auto;
+    position: absolute;
+    top: 86rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 636rpx;
+    height: 459rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 74rpx;
+    text-align: center;
+    z-index: 3;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.page .pay-msg-box .success-msg{
+    color: #4ea4a7;
+    font-size: 36rpx;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page .pay-msg-box .success-msg .text{
+    /* display: inline-block; */
+    padding-left: 20rpx;
+}
+.page .pay-msg-box .success-msg .text.fail{
+    color: #f61938;
+}
+
+.page .pay-msg-box .price{
+    font-size: 60rpx;
+    color: #575755;
+    text-align: center;
+}
+
+.page .pay-msg-box .tips{
+    font-size: 24rpx;
+    color: #a2a2a2;
+    text-align: center;
+}
+
+.page .pay-msg-box .my-order{
+    font-size: 30rpx;
+    color: #575755;
+    text-align: center;
+    width: 286rpx;
+    height: 86rpx;
+    line-height: 86rpx;
+    margin: 40rpx auto 0;
+    border-radius: 8rpx;
+    border: 1px solid #575755;
+}
+
+.page .bottom{
+    /* background-color: #fff; */
+    position: absolute;
+    top: 542rpx;
+    width: 100%;
+    height: 209rpx;
+}
+
+.page .order-msg{
+    height: 209rpx;
+    width: 636rpx;
+    background-color: #fff;
+    margin: 0 auto;
+    font-size: 24rpx;
+    box-sizing: border-box;
+    padding-left: 48rpx;
+    padding-top: 50rpx;
+}
