@@ -84,16 +84,24 @@ Page({
 			mobile: that.data.phone,
 			authType: 1,
 			authCode: that.data.code
-		}).then(data => {
-			return api.BindMobile({
+		}).then(res => {
+			utils.log('VerifyPhone:', res, {
 				mobile: that.data.phone,
 				password: utils.getStorage('wxappid')
 			})
+			if(res){
+				return api.BindMobile({
+					mobile: that.data.phone,
+					password: utils.getStorage('wxappid')
+				})
+			}else{
+				utils.log('手机验证失败：')
+			}
 
 		}).then(res => {
-			if (res.code == config.successCode) {
+			if (res) {
 				utils.log('绑定手机成功：', res)
-				utils.setStorage('usersn', res.usersn)
+				utils.setStorage('usersn', res)
 				var params = {
 					"avatarUrl": app.globalData.userInfo.avatarUrl,
 					"city": app.globalData.userInfo.city,
@@ -110,7 +118,7 @@ Page({
 				utils.log('绑定手机失败：', res)
 			}
 		}).then(res => {
-			if (res.code == config.successCode) {
+			if (res) {
 				utils.alert('绑定成功')
 				utils.log('上传用户信息成功：', res)
 				wx.switchTab({

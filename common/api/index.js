@@ -116,7 +116,7 @@ const BindMobile = (params) => {
     var data = utils.getData(params)
     return new Promise((resolve, reject) => {
         wx.request({
-            url: config.apiUrl + 'user/bindMobile',
+            url: config.apiUrl + 'user/mobileRegister',
             data: data,
             method: "POST",
             success: function (res) {
